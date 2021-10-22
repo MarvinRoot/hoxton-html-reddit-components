@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  * ul {
+    list-style-type: none;
+  }
+  * a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+  
+    height: 100vh;
+  }
+  
+  .header {
+    display: grid;
+    grid-template-columns: 150px 1fr 200px;
+    place-content: center;
+  }
+  
+  .logo {
+    display: grid;
+    align-content: center;
+  }
+  
+  .logo img {
+    width: 100px;
+    margin: 15px;
+  }
+  
+  .search-bar {
+    display: grid;
+    place-content: center;
+    padding: 5px;
+  }
+  
+  .header .search-bar input {
+    width: 500px;
+    border-radius: 7px;
+    background-color: #f6f7f8;
+    border: none;
+    font-size: 12px;
+    padding: 10px;
+  }
+  
+  .profile {
+    display: grid;
+    grid-template-columns: 30px 90px;
+  
+    justify-content: right;
+    align-items: center;
+    grid-gap: 20px;
+  }
+  
+  .profile img {
+    width: 40px;
+  }
+  
+  .main {
+    background-color: #dae0e6;
+    overflow-y: scroll;
+  
+    display: grid;
+    grid-template-columns: minmax(400px, 1000px);
+    justify-content: center;
+  }
+  
+  .main-content {
+    background-color: #dae0e6;
+  
+    display: grid;
+    grid-template:
+      "trending trending" 300px
+      "posts side-bar" 1fr /
+      1fr 300px;
+  
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  .trending {
+    grid-area: trending;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: #dae0e6;
+  }
+  
+  .trending .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+  }
+  
+  .trending img {
+    width: 150px;
+  }
+  
+  .posts {
+    grid-area: posts;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-rows: auto auto;
+    background-color: #dae0e6;
+  }
+  
+  .post {
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+  .post .post-data {
+    margin: 8px;
+    display: grid;
+    grid-template-columns: auto auto 1fr 70px;
+    align-items: center;
+    grid-gap: 10px;
+  }
+  
+  #span {
+    text-align: center;
+  }
+  
+  .post img {
+    width: 40px;
+  }
+  
+  .post button {
+    border-radius: 25px;
+    padding: 10px;
+    background-color: royalblue;
+    border: none;
+    color: white;
+  }
+  
+  .post-component {
+    margin: 8px;
+  }
+  
+  .footer {
+    margin: 8px;
+    display: inline;
+  }
+  .post .footer img {
+    width: 20px;
+  }
+  
+  .side-bar {
+    grid-area: side-bar;
+  
+    display: grid;
+    background-color: #dae0e6;
+    max-height: 0px;
+    grid-gap: 20px;
+  }
+  
+  .widgets {
+    background-color: white;
+    border-radius: 10px;
+    height: 520px;
+  }
+  
+  .image {
+    position: relative;
+  }
+  
+  .image h3 {
+    font-weight: 100;
+    color: white;
+    position: absolute;
+    top: 140px;
+    left: 20px;
+  }
+  .side-bar .image img {
+    width: 300px;
+    border-radius: 10px;
+  }
+  
+  .list {
+    font-size: 15px;
+    margin-left: 30px;
+    line-height: 50px;
+  }
+  
+  .button {
+    display: grid;
+    place-items: center;
+  }
+  
+  .button button {
+    border-radius: 25px;
+    padding: 10px 120px;
+    background-color: royalblue;
+    border: none;
+    color: white;
+  }
+  
+  .categories {
+    display: inline-block;
+    margin: 10px 25px;
+  }
+  
+  .categories button {
+    border-radius: 25px;
+    padding: 10px;
+    background-color: royalblue;
+    border: none;
+    color: white;
+  }
+  
+  .support {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    grid-gap: 20px;
+    position: sticky;
+    top: 15px;
+  }
+  
+  .help {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 20px;
+  }
+  
